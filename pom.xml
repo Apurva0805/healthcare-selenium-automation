@@ -6,8 +6,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.apurva.selenium</groupId>
-    <artifactId>healthcare-selenium-automation</artifactId>
+    <groupId>com.apurva.qa</groupId>
+    <artifactId>selenium-java-automation-framework</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -18,11 +18,11 @@
 
     <dependencies>
 
-        <!-- Selenium WebDriver -->
+        <!-- Selenium Java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.29.0</version>
+            <version>4.52.0</version>
         </dependency>
 
         <!-- TestNG -->
@@ -38,23 +38,10 @@
     <build>
         <plugins>
 
-            <!-- Java Compiler -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
-            </plugin>
-
-            <!-- TestNG Test Runner -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.2</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                </configuration>
+                <version>3.5.4</version>
             </plugin>
 
         </plugins>
